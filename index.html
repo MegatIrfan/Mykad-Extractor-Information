@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyKad Information Extractor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    <div class="d-flex vh-100">
+        <div class="container align-self-center">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card bg-light text-dark">
+                        <div class="card-body text-center">
+                            <img src="https://vectorise.net/logo/wp-content/uploads/2010/07/MyKad.png" alt="MyKad Logo" class="mykad-logo">
+                           
+                            <h1 class="card-title">MyKad Information Extractor</h1>
+                            <form id="mykadForm">
+                                <div class="form-group">
+                                    <label for="mykadInput">Enter MyKad Number:</label>
+                                    <input type="number" class="form-control" id="mykadInput" placeholder="e.g. 960101014321" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                            </form>
+                            <div id="results" class="mt-4">
+                                <p><strong>Birthday:</strong> <span id="birthday"></span></p>
+                                <p><strong>Gender:</strong> <span id="gender"></span></p>
+                                <p><strong>Region:</strong> <span id="region"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-center mt-3 small text-muted">Developed by Megat Irfan</p>
+                    <p class="small text-muted text-center">For study purposes only. All rights to the MyKad logo are owned by their respective copyright holders.</p>
+               
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
